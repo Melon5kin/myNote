@@ -27,7 +27,7 @@ resolve (value) {
     if (this.status === MyPromise.PENDING) { // 只有在状态为准备状态时调用函数才有效
       this.status = MyPromise.FULFUILLED
       this.value = value
-      setTimeout(() => { //保证即使executor函数调用resolve是异步的，onResolved函数的调用也在下一轮任务队列中
+      solved函数的调用也在下一轮任务队列中
         this.callback.forEach(callback => { //因为executor函数可能是异步的在then函数调用后执行
           callback.onResolved(value) // 因此当调用resolve方法时调用在then函数执行时存入的回调数组
         })
