@@ -5,7 +5,7 @@
 ```javascript
 class MyPromise{
     static PENDING = 'pending'//准备状态
-  	static FULFUILLED = 'fulfilled'//实现状态
+  	static FULFILLED = 'fulfilled'//实现状态
   	static REJECTED = 'rejected'//拒绝状态
 }
 ```

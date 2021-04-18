@@ -1,4 +1,4 @@
-# ajax拦截器
+# axios拦截器
 
 > 在ajax请求then或catch之前进行拦截操作
 
